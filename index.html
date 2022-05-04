@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\calculator.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container-top">
+          <input type="button" onclick="clearScreen()"  value="C" id="clear">   
+          <input type="text" name="result" class="result" id="result" value="" placeholder="Result" readonly />
+        </div>
+    <div class="calc-container">
+        <div class="row">
+            <input type="button" onclick="liveScreen(1)"  value="1">
+            <input type="button" onclick="liveScreen(2)"  value="2">
+            <input type="button" onclick="liveScreen(3)"  value="3">
+            <input type="button" onclick="liveScreen(4)"  value="4">
+        </div>
+        <div class="row">
+            <input type="button" onclick="liveScreen(5)"  value="5">
+            <input type="button" onclick="liveScreen(6)"  value="6">
+            <input type="button" onclick="liveScreen(7)"  value="7">
+            <input type="button" onclick="liveScreen(8)"  value="8">
+        </div>
+        <div class="row">
+            <input type="button" onclick="liveScreen(9)"  value="9">
+            <input type="button" onclick="liveScreen(0)"  value="0">
+            <input type="button" onclick="liveScreen('*')"  value="*">
+            <input type="button" onclick="liveScreen('/')"  value="/" >
+        </div>
+        <div class="row">
+            <input type="button" onclick="liveScreen('+')"  value="+">
+            <input type="button" onclick="liveScreen('-')"  value="-">
+            <input type="button" onclick="result.value = eval(result.value||null)"  value="=">
+            <input type="button" onclick="liveScreen('.')"  value=".">
+        </div>
+    </div>
+    </div>
+    <script src="js\calculator.js"></script>
+</body>
+</html>
